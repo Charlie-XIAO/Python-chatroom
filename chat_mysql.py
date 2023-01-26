@@ -93,7 +93,7 @@ class LogInformation:
             # 执行SQL语句
             cursor.execute(sql)
             # 写入头像数据
-            fout = open("user_profile.png", "wb")
+            fout = open("profiles/user_profile.png", "wb")
             fout.write(cursor.fetchone()[2])
             fout.close()
             # 关闭光标对象

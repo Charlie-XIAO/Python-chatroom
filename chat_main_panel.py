@@ -604,13 +604,13 @@ class MainPanel:
             # 为数据库读取用户头像以及保存到本地文件的时间留出缓冲
             time.sleep(0.5)
             # 打开图片 设置大小 并保存为png
-            self.img1 = Image.open("user_profile.png")
+            self.img1 = Image.open("profiles/user_profile.png")
             self.out1 = self.img1.resize((50, 50), Image.ANTIALIAS)
-            self.out1.save(r"user_profile1.png", "png")
+            self.out1.save(r"profiles/user_profile1.png", "png")
             # 为修改图片大小以及保存修改后的图片的时间留出缓冲
             time.sleep(0.5)
             # 把头像转化为PhotoImage 加入到列表中
-            self.face.append(PhotoImage(file="user_profile1.png"))
+            self.face.append(PhotoImage(file="profiles/user_profile1.png"))
             # 插入列表最后一个头像
             self.message_text.image_create(END, image=self.face[-1])
             self.message_text.insert(END, " : ")
@@ -631,13 +631,13 @@ class MainPanel:
             # 为数据库读取用户头像以及保存到本地文件的时间留出缓冲
             time.sleep(0.5)
             # 打开图片 设置大小 并保存为png
-            self.img1 = Image.open("user_profile.png")
+            self.img1 = Image.open("profiles/user_profile.png")
             self.out1 = self.img1.resize((50, 50), Image.ANTIALIAS)
-            self.out1.save(r"user_profile3.png", "png")
+            self.out1.save(r"profiles/user_profile3.png", "png")
             # 为修改图片大小以及保存修改后的图片的时间留出缓冲
             time.sleep(0.5)
             # 把头像转化为PhotoImage 加入到列表中
-            self.face.append(PhotoImage(file="user_profile3.png"))
+            self.face.append(PhotoImage(file="profiles/user_profile3.png"))
             # 插入列表最后一个头像
             self.message_text.image_create(END, image=self.face[-1])
             self.message_text.insert(END, " : ")
@@ -664,13 +664,13 @@ class MainPanel:
             # 为数据库读取用户头像以及保存到本地文件的时间留出缓冲
             time.sleep(0.5)
             # 打开图片 设置大小 并保存为png
-            self.img2 = Image.open("user_profile.png")
+            self.img2 = Image.open("profiles/user_profile.png")
             self.out2 = self.img2.resize((50, 50), Image.ANTIALIAS)
-            self.out2.save(r"user_profile2.png", "png")
+            self.out2.save(r"profiles/user_profile2.png", "png")
             # 为修改图片大小以及保存修改后的图片的时间留出缓冲
             time.sleep(0.5)
             # 把头像转化为PhotoImage 加入到列表中
-            self.face.append(PhotoImage(file="user_profile2.png"))
+            self.face.append(PhotoImage(file="profiles/user_profile2.png"))
             # 插入列表最后一个头像
             self.message_text.image_create(END, image=self.face[-1])
             self.message_text.insert(END, " : ")
